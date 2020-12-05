@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let gifUrl: string = 'https://media.giphy.com/media/2uksuufgQJ5VXJegxX/giphy.gif';
+  export let gifUrl: string = 'https://media.giphy.com/media/W3aJiOtRGambnQEgTD/giphy.gif';
 </script>
 
 <section>
@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: column;
     max-width: 50vw;
-    height: 100%;
     width: 100%;
     color: #fff;
     background: #323232;
@@ -42,6 +41,13 @@
   .GifSelect > label {
     display: flex;
     flex-direction: column;
+  }
+
+  label > span {
+    color: #ff3e00;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-bottom: 1rem;
   }
 
   input {

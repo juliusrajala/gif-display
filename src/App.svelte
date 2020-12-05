@@ -1,13 +1,12 @@
 <script lang="ts">
   import GifSelector from './components/GifSelector.svelte';
-  export let name: string;
+  import GifList from './components/GifList.svelte';
+
+export let name: string;
 </script>
 
 <main>
-  <div>
-    <h1>Hello {name}!</h1>
-    <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-  </div>
+  <GifList />
   <GifSelector />
 </main>
 
@@ -17,7 +16,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
   }
 
   main > * {
