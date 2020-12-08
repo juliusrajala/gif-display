@@ -2,7 +2,7 @@
   import GifSelector from './components/GifSelector.svelte';
   import GifList from './components/GifList.svelte';
 
-export let name: string;
+  export let name: string;
 </script>
 
 <main>
